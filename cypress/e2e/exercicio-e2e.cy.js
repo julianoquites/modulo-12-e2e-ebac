@@ -22,7 +22,6 @@ context("Exercicio - Testes End-to-end - Fluxo de pedido", () => {
       cy.login(dados.usuario, dados.senha);
     });
 
-    //TODO: Coloque todo o fluxo de teste aqui, considerando as boas práticas e otimizações
     cy.fixture("produtos").then((dados) => {
       for (let i = 0; i < 4; i++) {
         produtosPage.buscarProduto(dados[i].nomeProduto);
